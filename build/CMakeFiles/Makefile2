@@ -64,15 +64,37 @@ CMAKE_BINARY_DIR = /Users/diegoestrada/Documents/universidad/last-semester/game-
 
 # The main recursive "all" target.
 all: CMakeFiles/PongGame.dir/all
+all: deps/SDL/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: deps/SDL/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/PongGame.dir/clean
+clean: deps/SDL/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory deps/SDL
+
+# Recursive "all" directory target.
+deps/SDL/all: deps/SDL/CMakeFiles/SDL2main.dir/all
+deps/SDL/all: deps/SDL/CMakeFiles/SDL2.dir/all
+deps/SDL/all: deps/SDL/CMakeFiles/SDL2-static.dir/all
+.PHONY : deps/SDL/all
+
+# Recursive "preinstall" directory target.
+deps/SDL/preinstall:
+.PHONY : deps/SDL/preinstall
+
+# Recursive "clean" directory target.
+deps/SDL/clean: deps/SDL/CMakeFiles/SDL2main.dir/clean
+deps/SDL/clean: deps/SDL/CMakeFiles/SDL2.dir/clean
+deps/SDL/clean: deps/SDL/CMakeFiles/SDL2-static.dir/clean
+deps/SDL/clean: deps/SDL/CMakeFiles/uninstall.dir/clean
+.PHONY : deps/SDL/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/PongGame.dir
@@ -81,12 +103,12 @@ clean: CMakeFiles/PongGame.dir/clean
 CMakeFiles/PongGame.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles --progress-num=1,2 "Built target PongGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles --progress-num= "Built target PongGame"
 .PHONY : CMakeFiles/PongGame.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PongGame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PongGame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles 0
 .PHONY : CMakeFiles/PongGame.dir/rule
@@ -99,6 +121,110 @@ PongGame: CMakeFiles/PongGame.dir/rule
 CMakeFiles/PongGame.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/clean
 .PHONY : CMakeFiles/PongGame.dir/clean
+
+#=============================================================================
+# Target rules for target deps/SDL/CMakeFiles/SDL2main.dir
+
+# All Build rule for target.
+deps/SDL/CMakeFiles/SDL2main.dir/all:
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/SDL2main.dir/build.make deps/SDL/CMakeFiles/SDL2main.dir/depend
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/SDL2main.dir/build.make deps/SDL/CMakeFiles/SDL2main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles --progress-num=100 "Built target SDL2main"
+.PHONY : deps/SDL/CMakeFiles/SDL2main.dir/all
+
+# Build rule for subdir invocation for target.
+deps/SDL/CMakeFiles/SDL2main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/SDL/CMakeFiles/SDL2main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles 0
+.PHONY : deps/SDL/CMakeFiles/SDL2main.dir/rule
+
+# Convenience name for target.
+SDL2main: deps/SDL/CMakeFiles/SDL2main.dir/rule
+.PHONY : SDL2main
+
+# clean rule for target.
+deps/SDL/CMakeFiles/SDL2main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/SDL2main.dir/build.make deps/SDL/CMakeFiles/SDL2main.dir/clean
+.PHONY : deps/SDL/CMakeFiles/SDL2main.dir/clean
+
+#=============================================================================
+# Target rules for target deps/SDL/CMakeFiles/SDL2.dir
+
+# All Build rule for target.
+deps/SDL/CMakeFiles/SDL2.dir/all:
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/SDL2.dir/build.make deps/SDL/CMakeFiles/SDL2.dir/depend
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/SDL2.dir/build.make deps/SDL/CMakeFiles/SDL2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target SDL2"
+.PHONY : deps/SDL/CMakeFiles/SDL2.dir/all
+
+# Build rule for subdir invocation for target.
+deps/SDL/CMakeFiles/SDL2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles 50
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/SDL/CMakeFiles/SDL2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles 0
+.PHONY : deps/SDL/CMakeFiles/SDL2.dir/rule
+
+# Convenience name for target.
+SDL2: deps/SDL/CMakeFiles/SDL2.dir/rule
+.PHONY : SDL2
+
+# clean rule for target.
+deps/SDL/CMakeFiles/SDL2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/SDL2.dir/build.make deps/SDL/CMakeFiles/SDL2.dir/clean
+.PHONY : deps/SDL/CMakeFiles/SDL2.dir/clean
+
+#=============================================================================
+# Target rules for target deps/SDL/CMakeFiles/SDL2-static.dir
+
+# All Build rule for target.
+deps/SDL/CMakeFiles/SDL2-static.dir/all:
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/SDL2-static.dir/build.make deps/SDL/CMakeFiles/SDL2-static.dir/depend
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/SDL2-static.dir/build.make deps/SDL/CMakeFiles/SDL2-static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles --progress-num=51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99 "Built target SDL2-static"
+.PHONY : deps/SDL/CMakeFiles/SDL2-static.dir/all
+
+# Build rule for subdir invocation for target.
+deps/SDL/CMakeFiles/SDL2-static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles 49
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/SDL/CMakeFiles/SDL2-static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles 0
+.PHONY : deps/SDL/CMakeFiles/SDL2-static.dir/rule
+
+# Convenience name for target.
+SDL2-static: deps/SDL/CMakeFiles/SDL2-static.dir/rule
+.PHONY : SDL2-static
+
+# clean rule for target.
+deps/SDL/CMakeFiles/SDL2-static.dir/clean:
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/SDL2-static.dir/build.make deps/SDL/CMakeFiles/SDL2-static.dir/clean
+.PHONY : deps/SDL/CMakeFiles/SDL2-static.dir/clean
+
+#=============================================================================
+# Target rules for target deps/SDL/CMakeFiles/uninstall.dir
+
+# All Build rule for target.
+deps/SDL/CMakeFiles/uninstall.dir/all:
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/uninstall.dir/build.make deps/SDL/CMakeFiles/uninstall.dir/depend
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/uninstall.dir/build.make deps/SDL/CMakeFiles/uninstall.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles --progress-num= "Built target uninstall"
+.PHONY : deps/SDL/CMakeFiles/uninstall.dir/all
+
+# Build rule for subdir invocation for target.
+deps/SDL/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deps/SDL/CMakeFiles/uninstall.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles 0
+.PHONY : deps/SDL/CMakeFiles/uninstall.dir/rule
+
+# Convenience name for target.
+uninstall: deps/SDL/CMakeFiles/uninstall.dir/rule
+.PHONY : uninstall
+
+# clean rule for target.
+deps/SDL/CMakeFiles/uninstall.dir/clean:
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/uninstall.dir/build.make deps/SDL/CMakeFiles/uninstall.dir/clean
+.PHONY : deps/SDL/CMakeFiles/uninstall.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

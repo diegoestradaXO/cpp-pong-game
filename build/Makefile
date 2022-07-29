@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/Cellar/cmake/3.23.2/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/Cellar/cmake/3.23.2/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.23.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.23.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/Cellar/cmake/3.23.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/Cellar/cmake/3.23.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build//CMakeFiles/progress.marks
@@ -129,29 +174,105 @@ PongGame/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/build
 .PHONY : PongGame/fast
 
-source/main.o: source/main.cpp.o
-.PHONY : source/main.o
+#=============================================================================
+# Target rules for targets named SDL2main
+
+# Build rule for target.
+SDL2main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2main
+.PHONY : SDL2main
+
+# fast build rule for target.
+SDL2main/fast:
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/SDL2main.dir/build.make deps/SDL/CMakeFiles/SDL2main.dir/build
+.PHONY : SDL2main/fast
+
+#=============================================================================
+# Target rules for targets named SDL2
+
+# Build rule for target.
+SDL2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2
+.PHONY : SDL2
+
+# fast build rule for target.
+SDL2/fast:
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/SDL2.dir/build.make deps/SDL/CMakeFiles/SDL2.dir/build
+.PHONY : SDL2/fast
+
+#=============================================================================
+# Target rules for targets named SDL2-static
+
+# Build rule for target.
+SDL2-static: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL2-static
+.PHONY : SDL2-static
+
+# fast build rule for target.
+SDL2-static/fast:
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/SDL2-static.dir/build.make deps/SDL/CMakeFiles/SDL2-static.dir/build
+.PHONY : SDL2-static/fast
+
+#=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f deps/SDL/CMakeFiles/uninstall.dir/build.make deps/SDL/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+src/Game/game.o: src/Game/game.cpp.o
+.PHONY : src/Game/game.o
 
 # target to build an object file
-source/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/source/main.cpp.o
-.PHONY : source/main.cpp.o
+src/Game/game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Game/game.cpp.o
+.PHONY : src/Game/game.cpp.o
 
-source/main.i: source/main.cpp.i
-.PHONY : source/main.i
+src/Game/game.i: src/Game/game.cpp.i
+.PHONY : src/Game/game.i
 
 # target to preprocess a source file
-source/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/source/main.cpp.i
-.PHONY : source/main.cpp.i
+src/Game/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Game/game.cpp.i
+.PHONY : src/Game/game.cpp.i
 
-source/main.s: source/main.cpp.s
-.PHONY : source/main.s
+src/Game/game.s: src/Game/game.cpp.s
+.PHONY : src/Game/game.s
 
 # target to generate assembly for a file
-source/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/source/main.cpp.s
-.PHONY : source/main.cpp.s
+src/Game/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/Game/game.cpp.s
+.PHONY : src/Game/game.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -160,11 +281,22 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... uninstall"
 	@echo "... PongGame"
-	@echo "... source/main.o"
-	@echo "... source/main.i"
-	@echo "... source/main.s"
+	@echo "... SDL2"
+	@echo "... SDL2-static"
+	@echo "... SDL2main"
+	@echo "... src/Game/game.o"
+	@echo "... src/Game/game.i"
+	@echo "... src/Game/game.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

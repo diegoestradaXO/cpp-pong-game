@@ -69,31 +69,47 @@ include CMakeFiles/PongGame.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/PongGame.dir/flags.make
 
-CMakeFiles/PongGame.dir/source/main.cpp.o: CMakeFiles/PongGame.dir/flags.make
-CMakeFiles/PongGame.dir/source/main.cpp.o: ../source/main.cpp
-CMakeFiles/PongGame.dir/source/main.cpp.o: CMakeFiles/PongGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PongGame.dir/source/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PongGame.dir/source/main.cpp.o -MF CMakeFiles/PongGame.dir/source/main.cpp.o.d -o CMakeFiles/PongGame.dir/source/main.cpp.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/source/main.cpp
+CMakeFiles/PongGame.dir/src/main.cpp.o: CMakeFiles/PongGame.dir/flags.make
+CMakeFiles/PongGame.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/PongGame.dir/src/main.cpp.o: CMakeFiles/PongGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PongGame.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PongGame.dir/src/main.cpp.o -MF CMakeFiles/PongGame.dir/src/main.cpp.o.d -o CMakeFiles/PongGame.dir/src/main.cpp.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/src/main.cpp
 
-CMakeFiles/PongGame.dir/source/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PongGame.dir/source/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/source/main.cpp > CMakeFiles/PongGame.dir/source/main.cpp.i
+CMakeFiles/PongGame.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PongGame.dir/src/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/src/main.cpp > CMakeFiles/PongGame.dir/src/main.cpp.i
 
-CMakeFiles/PongGame.dir/source/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PongGame.dir/source/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/source/main.cpp -o CMakeFiles/PongGame.dir/source/main.cpp.s
+CMakeFiles/PongGame.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PongGame.dir/src/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/src/main.cpp -o CMakeFiles/PongGame.dir/src/main.cpp.s
+
+CMakeFiles/PongGame.dir/src/Game/game.cpp.o: CMakeFiles/PongGame.dir/flags.make
+CMakeFiles/PongGame.dir/src/Game/game.cpp.o: ../src/Game/game.cpp
+CMakeFiles/PongGame.dir/src/Game/game.cpp.o: CMakeFiles/PongGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PongGame.dir/src/Game/game.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PongGame.dir/src/Game/game.cpp.o -MF CMakeFiles/PongGame.dir/src/Game/game.cpp.o.d -o CMakeFiles/PongGame.dir/src/Game/game.cpp.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/src/Game/game.cpp
+
+CMakeFiles/PongGame.dir/src/Game/game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PongGame.dir/src/Game/game.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/src/Game/game.cpp > CMakeFiles/PongGame.dir/src/Game/game.cpp.i
+
+CMakeFiles/PongGame.dir/src/Game/game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PongGame.dir/src/Game/game.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/src/Game/game.cpp -o CMakeFiles/PongGame.dir/src/Game/game.cpp.s
 
 # Object files for target PongGame
 PongGame_OBJECTS = \
-"CMakeFiles/PongGame.dir/source/main.cpp.o"
+"CMakeFiles/PongGame.dir/src/main.cpp.o" \
+"CMakeFiles/PongGame.dir/src/Game/game.cpp.o"
 
 # External object files for target PongGame
 PongGame_EXTERNAL_OBJECTS =
 
-PongGame: CMakeFiles/PongGame.dir/source/main.cpp.o
+PongGame: CMakeFiles/PongGame.dir/src/main.cpp.o
+PongGame: CMakeFiles/PongGame.dir/src/Game/game.cpp.o
 PongGame: CMakeFiles/PongGame.dir/build.make
 PongGame: CMakeFiles/PongGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable PongGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable PongGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PongGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

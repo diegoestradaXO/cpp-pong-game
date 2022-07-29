@@ -1,3 +1,3 @@
 #! /bin/sh
 
-./configure.sh ; ./build.sh ; ./build/PongGame
+./configure.sh ; ./build.sh && clear && ./build/PongGame

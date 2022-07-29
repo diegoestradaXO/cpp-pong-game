@@ -1,3 +1,17 @@
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/PongGame.dir
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/edit_cache.dir
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/rebuild_cache.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/list_install_components.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/install.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/install/local.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/install/strip.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/deps/SDL/CMakeFiles/SDL2main.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/deps/SDL/CMakeFiles/SDL2.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/deps/SDL/CMakeFiles/SDL2-static.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/deps/SDL/CMakeFiles/uninstall.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/deps/SDL/CMakeFiles/edit_cache.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/deps/SDL/CMakeFiles/rebuild_cache.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/deps/SDL/CMakeFiles/list_install_components.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/deps/SDL/CMakeFiles/install.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/deps/SDL/CMakeFiles/install/local.dir
+/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/deps/SDL/CMakeFiles/install/strip.dir

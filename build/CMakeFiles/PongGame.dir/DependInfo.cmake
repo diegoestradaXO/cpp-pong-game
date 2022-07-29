@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/source/main.cpp" "CMakeFiles/PongGame.dir/source/main.cpp.o" "gcc" "CMakeFiles/PongGame.dir/source/main.cpp.o.d"
+  "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/src/Game/game.cpp" "CMakeFiles/PongGame.dir/src/Game/game.cpp.o" "gcc" "CMakeFiles/PongGame.dir/src/Game/game.cpp.o.d"
+  "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/src/main.cpp" "CMakeFiles/PongGame.dir/src/main.cpp.o" "gcc" "CMakeFiles/PongGame.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.

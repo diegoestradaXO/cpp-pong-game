@@ -143,12 +143,12 @@ void Game::update(){
 
     // if it hits player's 1 paddle
     if(ball.y + ball.h >= paddlePlayer1.y && ball.x + ball.w >= paddlePlayer1.x && ball.x <= paddlePlayer1.x + paddlePlayer1.w){
-        dy *= -1;
+        dy *= -1.2;
     }
 
     // if it hits palyer's 2 paddle
     if(ball.y  <= paddlePlayer2.y + paddlePlayer2.h && ball.x + ball.w >= paddlePlayer2.x && ball.x <= paddlePlayer2.x + paddlePlayer2.w){
-        dy *= -1;
+        dy *= -1.2;
     }
 
     // ball movement

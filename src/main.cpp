@@ -10,9 +10,11 @@ int main() {
 	game->setup();
 	while (game->running())
 	{
+		game->frameStart();
 		game->handleEvents();
 		game->update();
 		game->render();
+		game->frameEnd();
 	}
 	
 	game->clean();

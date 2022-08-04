@@ -34,12 +34,12 @@ clang: error: linker command failed with exit code 1 (use -v to see invocation)
 Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_5ddea/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_5ddea.dir/build.make CMakeFiles/cmTC_5ddea.dir/build
-Building C object CMakeFiles/cmTC_5ddea.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_GCC_PREFERRED_STACK_BOUNDARY  -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos" -mpreferred-stack-boundary=2 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_5ddea.dir/src.c.o -MF CMakeFiles/cmTC_5ddea.dir/src.c.o.d -o CMakeFiles/cmTC_5ddea.dir/src.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_58f63/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_58f63.dir/build.make CMakeFiles/cmTC_58f63.dir/build
+Building C object CMakeFiles/cmTC_58f63.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_GCC_PREFERRED_STACK_BOUNDARY  -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos" -mpreferred-stack-boundary=2 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_58f63.dir/src.c.o -MF CMakeFiles/cmTC_58f63.dir/src.c.o.d -o CMakeFiles/cmTC_58f63.dir/src.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c
 clang: error: unknown argument: '-mpreferred-stack-boundary=2'
-make[1]: *** [CMakeFiles/cmTC_5ddea.dir/src.c.o] Error 1
-make: *** [cmTC_5ddea/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_58f63.dir/src.c.o] Error 1
+make: *** [cmTC_58f63/fast] Error 2
 
 
 Source file was:
@@ -47,9 +47,9 @@ int x = 0; int main(int argc, char **argv) { return 0; }
 Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_0d6f4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_0d6f4.dir/build.make CMakeFiles/cmTC_0d6f4.dir/build
-Building C object CMakeFiles/cmTC_0d6f4.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_ALTIVEC_H_HDR  -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos" -maltivec -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_0d6f4.dir/src.c.o -MF CMakeFiles/cmTC_0d6f4.dir/src.c.o.d -o CMakeFiles/cmTC_0d6f4.dir/src.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_8852e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8852e.dir/build.make CMakeFiles/cmTC_8852e.dir/build
+Building C object CMakeFiles/cmTC_8852e.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_ALTIVEC_H_HDR  -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos" -maltivec -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_8852e.dir/src.c.o -MF CMakeFiles/cmTC_8852e.dir/src.c.o.d -o CMakeFiles/cmTC_8852e.dir/src.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c
 clang: warning: argument unused during compilation: '-maltivec' [-Wunused-command-line-argument]
 In file included from /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c:2:
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/altivec.h:13:2: error: "AltiVec support not enabled"
@@ -114,8 +114,8 @@ static __inline__ vector unsigned short __ATTRS_o_ai
                   ^
 fatal error: too many errors emitted, stopping now [-ferror-limit=]
 20 errors generated.
-make[1]: *** [CMakeFiles/cmTC_0d6f4.dir/src.c.o] Error 1
-make: *** [cmTC_0d6f4/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_8852e.dir/src.c.o] Error 1
+make: *** [cmTC_8852e/fast] Error 2
 
 
 Source file was:
@@ -128,9 +128,9 @@ Source file was:
 Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_43a83/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_43a83.dir/build.make CMakeFiles/cmTC_43a83.dir/build
-Building C object CMakeFiles/cmTC_43a83.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_ALTIVEC  -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos" -maltivec -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_43a83.dir/src.c.o -MF CMakeFiles/cmTC_43a83.dir/src.c.o.d -o CMakeFiles/cmTC_43a83.dir/src.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_44af1/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_44af1.dir/build.make CMakeFiles/cmTC_44af1.dir/build
+Building C object CMakeFiles/cmTC_44af1.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_ALTIVEC  -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos" -maltivec -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_44af1.dir/src.c.o -MF CMakeFiles/cmTC_44af1.dir/src.c.o.d -o CMakeFiles/cmTC_44af1.dir/src.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c
 clang: warning: argument unused during compilation: '-maltivec' [-Wunused-command-line-argument]
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c:2:11: error: unknown type name 'vector'
           vector unsigned int vzero() {
@@ -139,8 +139,8 @@ clang: warning: argument unused during compilation: '-maltivec' [-Wunused-comman
               return vec_splat_u32(0);
                      ^
 2 errors generated.
-make[1]: *** [CMakeFiles/cmTC_43a83.dir/src.c.o] Error 1
-make: *** [cmTC_43a83/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_44af1.dir/src.c.o] Error 1
+make: *** [cmTC_44af1/fast] Error 2
 
 
 Source file was:
@@ -152,30 +152,30 @@ Source file was:
 Determining if the include file malloc.h exists failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_c9b81/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c9b81.dir/build.make CMakeFiles/cmTC_c9b81.dir/build
-Building C object CMakeFiles/cmTC_c9b81.dir/CheckIncludeFile.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_c9b81.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_c9b81.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_c9b81.dir/CheckIncludeFile.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ed540/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ed540.dir/build.make CMakeFiles/cmTC_ed540.dir/build
+Building C object CMakeFiles/cmTC_ed540.dir/CheckIncludeFile.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_ed540.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_ed540.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_ed540.dir/CheckIncludeFile.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'malloc.h' file not found
 #include <malloc.h>
          ^~~~~~~~~~
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_c9b81.dir/CheckIncludeFile.c.o] Error 1
-make: *** [cmTC_c9b81/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_ed540.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_ed540/fast] Error 2
 
 
 
 Determining if the _strrev exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_7da5b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_7da5b.dir/build.make CMakeFiles/cmTC_7da5b.dir/build
-Building C object CMakeFiles/cmTC_7da5b.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_7da5b.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_7da5b.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_7da5b.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6c344/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_6c344.dir/build.make CMakeFiles/cmTC_6c344.dir/build
+Building C object CMakeFiles/cmTC_6c344.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_6c344.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_6c344.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_6c344.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_strrev'
   return ((int*)(&_strrev))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_7da5b.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_7da5b/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_6c344.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_6c344/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -201,15 +201,15 @@ int main(int argc, char** argv)
 Determining if the _strupr exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_aa50b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_aa50b.dir/build.make CMakeFiles/cmTC_aa50b.dir/build
-Building C object CMakeFiles/cmTC_aa50b.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_aa50b.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_aa50b.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_aa50b.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1f222/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1f222.dir/build.make CMakeFiles/cmTC_1f222.dir/build
+Building C object CMakeFiles/cmTC_1f222.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_1f222.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_1f222.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_1f222.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_strupr'
   return ((int*)(&_strupr))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_aa50b.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_aa50b/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_1f222.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_1f222/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -235,15 +235,15 @@ int main(int argc, char** argv)
 Determining if the _strlwr exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_cb083/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cb083.dir/build.make CMakeFiles/cmTC_cb083.dir/build
-Building C object CMakeFiles/cmTC_cb083.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_cb083.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_cb083.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_cb083.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_73d25/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_73d25.dir/build.make CMakeFiles/cmTC_73d25.dir/build
+Building C object CMakeFiles/cmTC_73d25.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_73d25.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_73d25.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_73d25.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_strlwr'
   return ((int*)(&_strlwr))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_cb083.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_cb083/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_73d25.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_73d25/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -269,15 +269,15 @@ int main(int argc, char** argv)
 Determining if the itoa exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_cce4e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cce4e.dir/build.make CMakeFiles/cmTC_cce4e.dir/build
-Building C object CMakeFiles/cmTC_cce4e.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_cce4e.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_cce4e.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_cce4e.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_073e4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_073e4.dir/build.make CMakeFiles/cmTC_073e4.dir/build
+Building C object CMakeFiles/cmTC_073e4.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_073e4.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_073e4.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_073e4.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier 'itoa'
   return ((int*)(&itoa))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_cce4e.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_cce4e/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_073e4.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_073e4/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -303,15 +303,15 @@ int main(int argc, char** argv)
 Determining if the _ltoa exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_aa3b0/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_aa3b0.dir/build.make CMakeFiles/cmTC_aa3b0.dir/build
-Building C object CMakeFiles/cmTC_aa3b0.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_aa3b0.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_aa3b0.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_aa3b0.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_24512/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_24512.dir/build.make CMakeFiles/cmTC_24512.dir/build
+Building C object CMakeFiles/cmTC_24512.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_24512.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_24512.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_24512.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_ltoa'
   return ((int*)(&_ltoa))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_aa3b0.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_aa3b0/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_24512.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_24512/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -337,15 +337,15 @@ int main(int argc, char** argv)
 Determining if the _uitoa exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_ad14d/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ad14d.dir/build.make CMakeFiles/cmTC_ad14d.dir/build
-Building C object CMakeFiles/cmTC_ad14d.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_ad14d.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_ad14d.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_ad14d.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_84001/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_84001.dir/build.make CMakeFiles/cmTC_84001.dir/build
+Building C object CMakeFiles/cmTC_84001.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_84001.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_84001.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_84001.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_uitoa'
   return ((int*)(&_uitoa))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_ad14d.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_ad14d/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_84001.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_84001/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -371,15 +371,15 @@ int main(int argc, char** argv)
 Determining if the _ultoa exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_89ca4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_89ca4.dir/build.make CMakeFiles/cmTC_89ca4.dir/build
-Building C object CMakeFiles/cmTC_89ca4.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_89ca4.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_89ca4.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_89ca4.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_91ac0/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_91ac0.dir/build.make CMakeFiles/cmTC_91ac0.dir/build
+Building C object CMakeFiles/cmTC_91ac0.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_91ac0.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_91ac0.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_91ac0.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_ultoa'
   return ((int*)(&_ultoa))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_89ca4.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_89ca4/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_91ac0.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_91ac0/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -405,15 +405,15 @@ int main(int argc, char** argv)
 Determining if the _i64toa exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_fd49c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_fd49c.dir/build.make CMakeFiles/cmTC_fd49c.dir/build
-Building C object CMakeFiles/cmTC_fd49c.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_fd49c.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_fd49c.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_fd49c.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_03f38/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_03f38.dir/build.make CMakeFiles/cmTC_03f38.dir/build
+Building C object CMakeFiles/cmTC_03f38.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_03f38.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_03f38.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_03f38.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_i64toa'
   return ((int*)(&_i64toa))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_fd49c.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_fd49c/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_03f38.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_03f38/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -439,15 +439,15 @@ int main(int argc, char** argv)
 Determining if the _ui64toa exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_55e2c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_55e2c.dir/build.make CMakeFiles/cmTC_55e2c.dir/build
-Building C object CMakeFiles/cmTC_55e2c.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_55e2c.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_55e2c.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_55e2c.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3256f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3256f.dir/build.make CMakeFiles/cmTC_3256f.dir/build
+Building C object CMakeFiles/cmTC_3256f.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_3256f.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_3256f.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_3256f.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_ui64toa'
   return ((int*)(&_ui64toa))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_55e2c.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_55e2c/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_3256f.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_3256f/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -473,15 +473,15 @@ int main(int argc, char** argv)
 Determining if the _stricmp exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_2f170/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2f170.dir/build.make CMakeFiles/cmTC_2f170.dir/build
-Building C object CMakeFiles/cmTC_2f170.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_2f170.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_2f170.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_2f170.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_28b8b/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_28b8b.dir/build.make CMakeFiles/cmTC_28b8b.dir/build
+Building C object CMakeFiles/cmTC_28b8b.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_28b8b.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_28b8b.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_28b8b.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_stricmp'
   return ((int*)(&_stricmp))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_2f170.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_2f170/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_28b8b.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_28b8b/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -507,9 +507,9 @@ int main(int argc, char** argv)
 Determining if the _strnicmp exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_72de0/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_72de0.dir/build.make CMakeFiles/cmTC_72de0.dir/build
-Building C object CMakeFiles/cmTC_72de0.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_72de0.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_72de0.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_72de0.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_21840/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_21840.dir/build.make CMakeFiles/cmTC_21840.dir/build
+Building C object CMakeFiles/cmTC_21840.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_21840.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_21840.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_21840.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_strnicmp'; did you mean 'strncmp'?
   return ((int*)(&_strnicmp))[argc];
                   ^~~~~~~~~
@@ -518,8 +518,8 @@ Building C object CMakeFiles/cmTC_72de0.dir/CheckSymbolExists.c.o
 int      strncmp(const char *__s1, const char *__s2, size_t __n);
          ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_72de0.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_72de0/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_21840.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_21840/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -545,9 +545,9 @@ int main(int argc, char** argv)
 Determining if the _wcsdup exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_2cc03/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2cc03.dir/build.make CMakeFiles/cmTC_2cc03.dir/build
-Building C object CMakeFiles/cmTC_2cc03.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_2cc03.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_2cc03.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_2cc03.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ff2aa/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_ff2aa.dir/build.make CMakeFiles/cmTC_ff2aa.dir/build
+Building C object CMakeFiles/cmTC_ff2aa.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_ff2aa.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_ff2aa.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_ff2aa.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_wcsdup'; did you mean 'wcsdup'?
   return ((int*)(&_wcsdup))[argc];
                   ^~~~~~~
@@ -556,8 +556,8 @@ Building C object CMakeFiles/cmTC_2cc03.dir/CheckSymbolExists.c.o
 wchar_t *wcsdup(const wchar_t *) __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_4_3);
          ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_2cc03.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_2cc03/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_ff2aa.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_ff2aa/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -583,15 +583,15 @@ int main(int argc, char** argv)
 Determining if the _wcsicmp exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_12d4c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_12d4c.dir/build.make CMakeFiles/cmTC_12d4c.dir/build
-Building C object CMakeFiles/cmTC_12d4c.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_12d4c.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_12d4c.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_12d4c.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_07c5f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_07c5f.dir/build.make CMakeFiles/cmTC_07c5f.dir/build
+Building C object CMakeFiles/cmTC_07c5f.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_07c5f.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_07c5f.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_07c5f.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_wcsicmp'
   return ((int*)(&_wcsicmp))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_12d4c.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_12d4c/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_07c5f.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_07c5f/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -617,9 +617,9 @@ int main(int argc, char** argv)
 Determining if the _wcsnicmp exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_4a932/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4a932.dir/build.make CMakeFiles/cmTC_4a932.dir/build
-Building C object CMakeFiles/cmTC_4a932.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_4a932.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_4a932.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_4a932.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_64b19/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_64b19.dir/build.make CMakeFiles/cmTC_64b19.dir/build
+Building C object CMakeFiles/cmTC_64b19.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_64b19.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_64b19.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_64b19.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier '_wcsnicmp'; did you mean 'wcsncmp'?
   return ((int*)(&_wcsnicmp))[argc];
                   ^~~~~~~~~
@@ -628,8 +628,8 @@ Building C object CMakeFiles/cmTC_4a932.dir/CheckSymbolExists.c.o
 int     wcsncmp(const wchar_t *, const wchar_t *, size_t);
         ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_4a932.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_4a932/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_64b19.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_64b19/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -655,9 +655,9 @@ int main(int argc, char** argv)
 Determining if the fopen64 exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_20132/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_20132.dir/build.make CMakeFiles/cmTC_20132.dir/build
-Building C object CMakeFiles/cmTC_20132.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_20132.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_20132.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_20132.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_802cc/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_802cc.dir/build.make CMakeFiles/cmTC_802cc.dir/build
+Building C object CMakeFiles/cmTC_802cc.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_802cc.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_802cc.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_802cc.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier 'fopen64'; did you mean 'fopen'?
   return ((int*)(&fopen64))[argc];
                   ^~~~~~~
@@ -666,8 +666,8 @@ Building C object CMakeFiles/cmTC_20132.dir/CheckSymbolExists.c.o
 FILE    *fopen(const char * __restrict __filename, const char * __restrict __mode) __DARWIN_ALIAS_STARTING(__MAC_10_6, __IPHONE_2_0, __DARWIN_ALIAS(fopen));
          ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_20132.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_20132/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_802cc.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_802cc/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -693,9 +693,9 @@ int main(int argc, char** argv)
 Determining if the fseeko64 exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_acab8/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_acab8.dir/build.make CMakeFiles/cmTC_acab8.dir/build
-Building C object CMakeFiles/cmTC_acab8.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_acab8.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_acab8.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_acab8.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5e1e1/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_5e1e1.dir/build.make CMakeFiles/cmTC_5e1e1.dir/build
+Building C object CMakeFiles/cmTC_5e1e1.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_5e1e1.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_5e1e1.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_5e1e1.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:14:19: error: use of undeclared identifier 'fseeko64'; did you mean 'fseeko'?
   return ((int*)(&fseeko64))[argc];
                   ^~~~~~~~
@@ -704,8 +704,8 @@ Building C object CMakeFiles/cmTC_acab8.dir/CheckSymbolExists.c.o
 int      fseeko(FILE * __stream, off_t __offset, int __whence);
          ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_acab8.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_acab8/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_5e1e1.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_5e1e1/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -731,15 +731,15 @@ int main(int argc, char** argv)
 Determining if the getauxval exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_fb196/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_fb196.dir/build.make CMakeFiles/cmTC_fb196.dir/build
-Building C object CMakeFiles/cmTC_fb196.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_fb196.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_fb196.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_fb196.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2ff43/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_2ff43.dir/build.make CMakeFiles/cmTC_2ff43.dir/build
+Building C object CMakeFiles/cmTC_2ff43.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_2ff43.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_2ff43.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_2ff43.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/auxv.h' file not found
 #include <sys/auxv.h>
          ^~~~~~~~~~~~
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_fb196.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_fb196/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_2ff43.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_2ff43/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -759,15 +759,15 @@ int main(int argc, char** argv)
 Determining if the elf_aux_info exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_430ec/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_430ec.dir/build.make CMakeFiles/cmTC_430ec.dir/build
-Building C object CMakeFiles/cmTC_430ec.dir/CheckSymbolExists.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_430ec.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_430ec.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_430ec.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1bee8/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_1bee8.dir/build.make CMakeFiles/cmTC_1bee8.dir/build
+Building C object CMakeFiles/cmTC_1bee8.dir/CheckSymbolExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos"  -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_1bee8.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_1bee8.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_1bee8.dir/CheckSymbolExists.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/auxv.h' file not found
 #include <sys/auxv.h>
          ^~~~~~~~~~~~
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_430ec.dir/CheckSymbolExists.c.o] Error 1
-make: *** [cmTC_430ec/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_1bee8.dir/CheckSymbolExists.c.o] Error 1
+make: *** [cmTC_1bee8/fast] Error 2
 
 
 File /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -787,9 +787,9 @@ int main(int argc, char** argv)
 Performing C SOURCE FILE Test HAVE_SEM_TIMEDWAIT failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_f7da4/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_f7da4.dir/build.make CMakeFiles/cmTC_f7da4.dir/build
-Building C object CMakeFiles/cmTC_f7da4.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_SEM_TIMEDWAIT  -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos" -I/usr/local/Cellar/libusb/1.0.25/include/libusb-1.0  -D_THREAD_SAFE -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_f7da4.dir/src.c.o -MF CMakeFiles/cmTC_f7da4.dir/src.c.o.d -o CMakeFiles/cmTC_f7da4.dir/src.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_cdaef/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_cdaef.dir/build.make CMakeFiles/cmTC_cdaef.dir/build
+Building C object CMakeFiles/cmTC_cdaef.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_SEM_TIMEDWAIT  -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos" -I/usr/local/Cellar/libusb/1.0.25/include/libusb-1.0  -D_THREAD_SAFE -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_cdaef.dir/src.c.o -MF CMakeFiles/cmTC_cdaef.dir/src.c.o.d -o CMakeFiles/cmTC_cdaef.dir/src.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c:5:19: error: implicit declaration of function 'sem_timedwait' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
                   sem_timedwait(NULL, NULL);
                   ^
@@ -798,8 +798,8 @@ Building C object CMakeFiles/cmTC_f7da4.dir/src.c.o
 int sem_trywait(sem_t *);
     ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_f7da4.dir/src.c.o] Error 1
-make: *** [cmTC_f7da4/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_cdaef.dir/src.c.o] Error 1
+make: *** [cmTC_cdaef/fast] Error 2
 
 
 Source file was:
@@ -813,15 +813,15 @@ Source file was:
 Determining if files pthread_np.h exist failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_b032c/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b032c.dir/build.make CMakeFiles/cmTC_b032c.dir/build
-Building C object CMakeFiles/cmTC_b032c.dir/HAVE_PTHREAD_NP_H.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos" -I/usr/local/Cellar/libusb/1.0.25/include/libusb-1.0  -D_THREAD_SAFE -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_b032c.dir/HAVE_PTHREAD_NP_H.c.o -MF CMakeFiles/cmTC_b032c.dir/HAVE_PTHREAD_NP_H.c.o.d -o CMakeFiles/cmTC_b032c.dir/HAVE_PTHREAD_NP_H.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4727e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_4727e.dir/build.make CMakeFiles/cmTC_4727e.dir/build
+Building C object CMakeFiles/cmTC_4727e.dir/HAVE_PTHREAD_NP_H.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos" -I/usr/local/Cellar/libusb/1.0.25/include/libusb-1.0  -D_THREAD_SAFE -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_4727e.dir/HAVE_PTHREAD_NP_H.c.o -MF CMakeFiles/cmTC_4727e.dir/HAVE_PTHREAD_NP_H.c.o.d -o CMakeFiles/cmTC_4727e.dir/HAVE_PTHREAD_NP_H.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CheckIncludeFiles/HAVE_PTHREAD_NP_H.c:2:10: fatal error: 'pthread_np.h' file not found
 #include <pthread_np.h>
          ^~~~~~~~~~~~~~
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_b032c.dir/HAVE_PTHREAD_NP_H.c.o] Error 1
-make: *** [cmTC_b032c/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_4727e.dir/HAVE_PTHREAD_NP_H.c.o] Error 1
+make: *** [cmTC_4727e/fast] Error 2
 
 
 Source:
@@ -834,9 +834,9 @@ int main(void){return 0;}
 Performing C SOURCE FILE Test HAVE_PTHREAD_SETNAME_NP failed with the following output:
 Change Dir: /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_97542/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_97542.dir/build.make CMakeFiles/cmTC_97542.dir/build
-Building C object CMakeFiles/cmTC_97542.dir/src.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_PTHREAD_SETNAME_NP  -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos" -I/usr/local/Cellar/libusb/1.0.25/include/libusb-1.0  -D_THREAD_SAFE -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_97542.dir/src.c.o -MF CMakeFiles/cmTC_97542.dir/src.c.o.d -o CMakeFiles/cmTC_97542.dir/src.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_560c7/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_560c7.dir/build.make CMakeFiles/cmTC_560c7.dir/build
+Building C object CMakeFiles/cmTC_560c7.dir/src.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DHAVE_PTHREAD_SETNAME_NP  -idirafter "/Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/deps/SDL/src/video/khronos" -I/usr/local/Cellar/libusb/1.0.25/include/libusb-1.0  -D_THREAD_SAFE -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -MD -MT CMakeFiles/cmTC_560c7.dir/src.c.o -MF CMakeFiles/cmTC_560c7.dir/src.c.o.d -o CMakeFiles/cmTC_560c7.dir/src.c.o -c /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c
 /Users/diegoestrada/Documents/universidad/last-semester/game-engines/pong-game/build/CMakeFiles/CMakeTmp/src.c:5:50: error: too many arguments to function call, expected 1, have 2
               pthread_setname_np(pthread_self(), "");
               ~~~~~~~~~~~~~~~~~~                 ^~
@@ -844,8 +844,8 @@ Building C object CMakeFiles/cmTC_97542.dir/src.c.o
 int     pthread_setname_np(const char*);
         ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_97542.dir/src.c.o] Error 1
-make: *** [cmTC_97542/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_560c7.dir/src.c.o] Error 1
+make: *** [cmTC_560c7/fast] Error 2
 
 
 Source file was:

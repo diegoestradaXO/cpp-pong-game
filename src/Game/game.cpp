@@ -5,7 +5,9 @@
 
 SDL_Rect ball;
 SDL_Rect paddlePlayer1;
-int speed = 5;
+SDL_Rect paddlePlayer2;
+int ball_speed = 5;
+int player_speed = 30;
 
 
 Game::Game (){
@@ -40,6 +42,11 @@ void Game::setup(){
     paddlePlayer1.h = 20;
     paddlePlayer1.x = (window_width / 2) - (paddlePlayer1.w /2);
     paddlePlayer1.y = window_height - paddlePlayer1.h;
+
+    paddlePlayer2.w = 100;
+    paddlePlayer2.h = 20;
+    paddlePlayer2.x = (window_width / 2) - (paddlePlayer1.w /2);
+    paddlePlayer2.y = 0;
 };
 
 void Game::frameStart(){
@@ -63,12 +70,43 @@ void Game::frameEnd(){
     std::cout << " " << std::endl;
 };
 
+
+// Managing key pressing
 void Game::handleEvents(){
     std::cout << "Game Handling events..." << std::endl;
     SDL_Event event;
+
     while(SDL_PollEvent(&event)){
         if(event.type == SDL_QUIT){
             isRunning = false;
+        }
+        // Paddle movement
+        if(event.type == SDL_KEYDOWN){
+            switch(event.key.keysym.sym){
+                //PLAYER 1 (bottom): uses arrows
+                case SDLK_RIGHT:
+                    if(paddlePlayer1.x + paddlePlayer1.w + player_speed <= window_width){
+                        paddlePlayer1.x += player_speed;
+                    }
+                    break; 
+                case SDLK_LEFT:
+                    if(paddlePlayer1.x - player_speed >= 0){
+                        paddlePlayer1.x -= player_speed;
+                    }
+                    break;
+
+                // PLAYER 2 (top): uses a and d keys
+                case SDLK_a:
+                    if(paddlePlayer2.x - player_speed >= 0){
+                        paddlePlayer2.x -= player_speed;
+                    }
+                    break;
+                case SDLK_d:
+                if(paddlePlayer2.x + paddlePlayer2.w + player_speed <= window_width){
+                        paddlePlayer2.x += player_speed;
+                    }
+                    break;
+            }
         }
     }
 };
@@ -83,7 +121,8 @@ void Game::update(){
 
     // if it crashes bottom of the window
     if((ball.y + ball.h) >= window_height){
-        dy *= -1;
+        isRunning = false;
+        std::cout << "Player 2 wins ..." << std::endl;
     }
 
     // if it crashes right side of the window
@@ -98,12 +137,23 @@ void Game::update(){
 
     // if it crases top side of the window
     if(ball.y <= 0){
+        isRunning = false;
+        std::cout << "Player 1 wins ..." << std::endl;
+    }
+
+    // if it hits player's 1 paddle
+    if(ball.y + ball.h >= paddlePlayer1.y && ball.x + ball.w >= paddlePlayer1.x && ball.x <= paddlePlayer1.x + paddlePlayer1.w){
+        dy *= -1;
+    }
+
+    // if it hits palyer's 2 paddle
+    if(ball.y  <= paddlePlayer2.y + paddlePlayer2.h && ball.x + ball.w >= paddlePlayer2.x && ball.x <= paddlePlayer2.x + paddlePlayer2.w){
         dy *= -1;
     }
 
     // ball movement
-    ball.x += speed * dx;
-    ball.y += speed * dy;
+    ball.x += ball_speed * dx;
+    ball.y += ball_speed * dy;
 };
 void Game::render(){
     std::cout << "Game Rendering..." << std::endl;
@@ -112,6 +162,7 @@ void Game::render(){
     SDL_SetRenderDrawColor(renderer, 255, 255, 255, 1);
     SDL_RenderFillRect(renderer, &ball);
     SDL_RenderFillRect(renderer,&paddlePlayer1);
+    SDL_RenderFillRect(renderer,&paddlePlayer2);
     SDL_RenderPresent(renderer);
 
 };
